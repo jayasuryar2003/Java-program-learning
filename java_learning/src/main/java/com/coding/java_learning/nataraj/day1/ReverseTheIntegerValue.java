@@ -1,4 +1,4 @@
-package com.coding.java_learning.day1;
+package com.coding.java_learning.nataraj.day1;
 
 // Reverse the integer value
 // input = [1,2,3,4,5]

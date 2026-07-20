@@ -1,4 +1,4 @@
-package com.coding.java_learning.day1;
+package com.coding.java_learning.nataraj.day1;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,7 +7,7 @@ import java.util.Set;
 // 1.Character count in string
 // 2. Repeated consecutive charactes count
 // input = "Nataraj java programming"
-// output => =2,p=1,a=6,r=3,t=1,v=1,g=2,i=1,j=2,m=2,n=2,o=1 ==> by seeing thois you say it is a
+// output => =2,p=1,a=6,r=3,t=1,v=1,g=2,i=1,j=2,m=2,n=2,o=1 ==> by seeing this you say it is a map
 // output => n=2,a=6,r=3,j=2,m=2,g=2
 public class CountTheRepeatedCharacterInString {
     public static void main(String[] args) {

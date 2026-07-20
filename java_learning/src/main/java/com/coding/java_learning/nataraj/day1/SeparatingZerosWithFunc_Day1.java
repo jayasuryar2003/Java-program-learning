@@ -1,4 +1,4 @@
-package com.coding.java_learning.day1;
+package com.coding.java_learning.nataraj.day1;
 
 //      input = [12,90,5,0,32,0,0,99];
 //      output = [12,9,5,32,99,0,0,0,0];

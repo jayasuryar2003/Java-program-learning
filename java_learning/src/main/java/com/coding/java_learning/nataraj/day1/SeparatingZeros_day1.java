@@ -1,4 +1,4 @@
-package com.coding.java_learning.day1;
+package com.coding.java_learning.nataraj.day1;
 
 import java.util.ArrayList;
 import java.util.List;
