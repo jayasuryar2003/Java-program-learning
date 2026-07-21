@@ -1,40 +1,26 @@
 package com.coding.java_learning.nataraj.day1;
 
-public class MultiThreading  {
-    static void main() {
-         Mytask mytask = new Mytask();
-         mytask.start();
+import java.util.concurrent.*;
 
-        Thread thread1 = new Thread(()-> {
-            System.out.println("rUNNING IN:"+Thread.currentThread().getName());
-        });
-        thread1.start();
+public class MultiThreading {
+    static void main() throws ExecutionException, InterruptedException {
+        Callable<Integer> callable = ()->{
+            return 42;
+        };
 
-        Runnable runnable =
-                ()-> {
-                    System.out.println("rRUNNING IN:"+Thread.currentThread().getName());
-                    System.out.println("rRUNNING IN:"+Thread.currentThread().getState());
-                    try {
-                        Thread.sleep(2000);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException(e);
-                    }
-                };
-        Thread thread2 = new Thread(runnable,"surya");
-        thread2.start();
-
+        ExecutorService executorService = Executors.newSingleThreadExecutor();
+        Future<Integer> future = executorService.submit(callable);
+        System.out.println(future.get());
+        executorService.shutdown();
 
     }
-
-
-
-
 }
 
-class Mytask extends Thread {
-    @Override
-    public void run() {
-        System.out.println("rUNNING IN:"+Thread.currentThread().getName());
-    }
-}
+//class MyThread implements Runnable {
+//    @Override
+//    public void run() {
+//        System.out.println(Thread.currentThread().getName());
+//    }
+//}
+
 

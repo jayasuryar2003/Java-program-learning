@@ -1,4 +1,4 @@
-package com.coding.java_learning.nataraj.day1.day2;
+package com.coding.java_learning.nataraj.day2;
 
 // input = "a4b2c1d2e5"
 // output = "aaaabbcddeeeee"
@@ -12,7 +12,7 @@ public class StringDecompression {
             char ch = str1.charAt(i);
 
             if (Character.isDigit(ch)) {
-                for (int j = 0; j < Integer.parseInt(String.valueOf(str1.charAt(i))); j++) {
+                for (int j = 0; j < Integer.parseInt(String.valueOf(str1.charAt(i))); j++) { //---> think like integer.parseInt is ok but we can give only
                     concat = concat + str1.charAt(i-1);
                 }
             }

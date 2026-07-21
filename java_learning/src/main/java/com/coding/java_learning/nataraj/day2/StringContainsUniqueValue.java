@@ -1,4 +1,4 @@
-package com.coding.java_learning.nataraj.day1.day2;
+package com.coding.java_learning.nataraj.day2;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -12,7 +12,7 @@ public class StringContainsUniqueValue {
     static void main() {
         String str1 = "abcd".toLowerCase();
         String[] arr =  str1.split("");
-        HashSet<String> set = new HashSet<>(Arrays.asList(arr));
+        HashSet<String> set = new HashSet<>(Arrays.asList(arr));  // ---> there is nothing like set we have to use only Hashset
         if (str1.length() != set.size()) {
             System.out.println(false);
         }

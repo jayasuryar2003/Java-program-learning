@@ -1,17 +1,17 @@
-package com.coding.java_learning.nataraj.day1.day2;
+package com.coding.java_learning.nataraj.day2;
 
 import java.util.Arrays;
 import java.util.LinkedList;
 
 // Remove the target element from the array
-// input = {1,2,3,4,5,6,6,7,4,5,9,10}  --?> you should not use
+// input = {1,2,3,4,5,6,6,7,4,5,9,10}  --?> you should not use sorting beacuse the output have the same insertion order
 //Traget element = 6
 //input = {1,2,3,4,5,7,4,5,9,10}
 public class RemoveTheTargetElement {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,5,6,6,7,4,5,9,10};
         int target = 6;
-        LinkedList list = new LinkedList();
+        LinkedList list = new LinkedList();  // --> I want to maintain the insertion order so I am going for the linked list
 
         for (int i : arr) {
             if (target == i) {

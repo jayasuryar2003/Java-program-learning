@@ -1,4 +1,4 @@
-package com.coding.java_learning.nataraj.day1.day2;
+package com.coding.java_learning.nataraj.day2;
 
 // input = "aaaabbcddeeeee"
 // output = "a4b2c1d2e5"

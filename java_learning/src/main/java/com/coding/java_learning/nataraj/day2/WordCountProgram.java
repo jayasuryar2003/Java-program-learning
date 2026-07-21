@@ -1,4 +1,4 @@
-package com.coding.java_learning.nataraj.day1.day2;
+package com.coding.java_learning.nataraj.day2;
 
 import java.util.HashMap;
 
