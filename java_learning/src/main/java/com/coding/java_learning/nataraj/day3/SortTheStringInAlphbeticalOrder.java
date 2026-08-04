@@ -11,7 +11,7 @@ import java.util.TreeMap;
 public class SortTheStringInAlphbeticalOrder {
     static void main() {
        String str = "defaceable";
-       TreeMap<Character, Integer> map = new TreeMap<>(); // strore the values in alphabetical order
+       TreeMap<Character, Integer> map = new TreeMap<>(); // strore the values in alphabetical order --> for each similar insert key will find the try to replace the value if it is present so the value is always 1 for all the key
 
         for( int i = 0; i < str.length(); i++ ) {
             if (map.containsKey(str.charAt(i))){

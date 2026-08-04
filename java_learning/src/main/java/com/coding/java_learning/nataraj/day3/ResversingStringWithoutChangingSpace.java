@@ -33,7 +33,7 @@ public class ResversingStringWithoutChangingSpace {
             }
         }
 
-        String output = String.join("",valueList);
+        String output = String.join("",valueList);// list to String
 
         System.out.println("input: "+name);
         System.out.println("output: "+output);
