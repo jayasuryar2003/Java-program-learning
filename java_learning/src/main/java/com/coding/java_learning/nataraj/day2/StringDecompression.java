@@ -12,7 +12,7 @@ public class StringDecompression {
             char ch = str1.charAt(i);
 
             if (Character.isDigit(ch)) {
-                for (int j = 0; j < Integer.parseInt(String.valueOf(str1.charAt(i))); j++) { //---> think like integer.parseInt is ok but we can give only
+                for (int j = 0; j < Integer.parseInt(String.valueOf(str1.charAt(i))); j++) { //---> think like integer.parseInt is ok but we can give only string values to it
                     concat = concat + str1.charAt(i-1);
                 }
             }
